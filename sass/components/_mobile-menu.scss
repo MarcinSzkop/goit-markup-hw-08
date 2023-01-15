@@ -20,8 +20,9 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  border: none;
 }
+
 @media screen and (min-width: 480px) {
   .mobile-menu {
     padding: 0;
@@ -36,7 +37,6 @@
       display: block;
       font-size: 40px;
       color: $BlackColor;
-
       padding-bottom: 32px;
       transition: $TransitionSet;
 
@@ -48,7 +48,7 @@
 
     &__phone {
       display: block;
-      padding-top: 302px;
+      padding-top: 270px;
       font-size: 34px;
       color: $BlueColor;
     }
@@ -81,10 +81,11 @@
   svg {
     fill: $BlackColor;
     background-color: $WhiteColor;
+    cursor: pointer;
 
     &:hover,
     &:focus {
-      fill: $BlueColor;
+      fill: $BlueColor !important;
     }
   }
 }
