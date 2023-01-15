@@ -1,0 +1,100 @@
+.portfolio {
+  display: flex;
+
+  &__grid {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__box {
+    margin-top: 50px;
+    margin-bottom: 94px;
+  }
+
+  &__list {
+    font-family: "Roboto";
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    list-style: none;
+    width: calc((100% - 60px) / 3);
+
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition: box-shadow $TransitionSet;
+    }
+  }
+
+  &__figure {
+    width: 370px;
+    background-color: $WhiteColor;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: $TransitionSet;
+  }
+
+  &__content {
+    font-size: 16px;
+    margin-left: 24px;
+    color: $WhiteColor;
+    padding-top: 4px;
+    padding-bottom: 20px;
+  }
+
+  &__figcaption-box {
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 24px;
+    color: $BlackColor;
+    padding-top: 20px;
+  }
+
+  &__pull-out-box {
+    font-style: normal;
+    height: 294px;
+    width: 370px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $WhiteColor;
+    margin-left: 0px;
+    padding: 49px 45px 49px 24px;
+    line-height: 1.56;
+  }
+
+  &__dscr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $DarkGrayColor;
+    letter-spacing: 0.03em;
+    margin-left: 24px;
+    padding-bottom: 20px;
+  }
+}
+
+.portfolio__figure:hover .portfolio__overlay {
+  transform: translateY(0);
+}

@@ -1,0 +1,40 @@
+.our-customers {
+  font-style: normal;
+
+  &__heading {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__bg {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin-top: 50px;
+    transition: border-color $TransitionSet;
+    cursor: pointer;
+
+    &:is(:hover, :focus) {
+      border-color: $BlueColor;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    margin: 16px 32px 16px 32px;
+    fill: $Gray-icons-color;
+    transition: fill $TransitionSet;
+  }
+
+  &__bg:is(:hover, :focus) > &__icon {
+    fill: $BlueColor;
+  }
+}

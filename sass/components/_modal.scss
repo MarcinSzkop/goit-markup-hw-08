@@ -1,0 +1,198 @@
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease, visibility 500ms ease;
+}
+
+.modal-backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000033;
+  inset: 0;
+}
+
+.modal-backdrop.is-hidden .modal-box {
+  transform: scale(0);
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  border-radius: 4px;
+  background-color: $WhiteColor;
+  transition: transform 0.6s;
+  transition-timing-function: ease;
+  padding: 40px;
+  text-align: center;
+
+  &__close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: inherit;
+    border-radius: 50%;
+    background-color: $WhiteColor;
+    cursor: pointer;
+  }
+
+  &__form {
+    font-family: Roboto;
+  }
+
+  &__form-title {
+    font-style: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $BlackColor;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__form-field-name {
+    display: block;
+    font-style: regular;
+    font-size: 12px;
+    line-height: 14px;
+    color: $DarkGrayColor;
+    margin-bottom: 4px;
+    text-align: start;
+  }
+
+  &__form-icon {
+    position: absolute;
+    left: 55px;
+    margin-top: 20px;
+    transform: translateY(-50%);
+    fill: $BlackColor;
+    transition: $TransitionSet;
+
+    &:hover,
+    &:focus {
+      fill: $BlueColor;
+    }
+  }
+
+  &__form-field {
+    width: 448px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
+    padding-left: 40px;
+    transition: $TransitionSet;
+
+    &:focus,
+    &:hover {
+      border-color: $BlueColor !important;
+      outline: none;
+    }
+  }
+
+  &__form-field-comment {
+    width: 448px;
+    height: 120px;
+    margin-bottom: 20px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
+    transition: border-color $TransitionSet;
+
+    &:hover,
+    &:focus {
+      border-color: $BlueColor;
+    }
+  }
+
+  &__form-field:focus + &__form-icon {
+    fill: $BlueColor;
+  }
+
+  &__textarea {
+    width: 448px;
+    height: 120px;
+    font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;
+    padding: 16px 12px 16px 12px;
+  }
+
+  &__privacy-box {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 14px;
+  }
+
+  &__checkbox-wrapper {
+    position: relative;
+    width: 16px;
+  }
+
+  &__checkbox-hidden {
+    display: none;
+  }
+
+  &__checkbox-not-checked {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+
+  &__checkbox-checked {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &__checkbox-hidden:checked ~ &__checkbox-checked {
+    opacity: 1;
+  }
+
+  &__checkbox-hidden:checked + &__checkbox-not-checked {
+    opacity: 0;
+  }
+
+  &__text-privacy-form {
+    font-style: regular;
+    font-size: 14px;
+    line-height: 24px;
+    color: $DarkGrayColor;
+  }
+
+  &__text-privacy-form-link {
+    color: $BlueColor;
+  }
+
+  &__button-submit {
+    width: 200px;
+    height: 50px;
+    background-color: $BlueColor;
+    color: $WhiteColor;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: $TransitionSet;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+}

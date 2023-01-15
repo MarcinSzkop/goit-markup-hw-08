@@ -1,0 +1,41 @@
+.what-we-do {
+  margin-top: -94px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: $BlackColor;
+  }
+
+  &__bg-description {
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: relative;
+    bottom: 70px;
+    margin-bottom: -70px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 27px;
+    color: $WhiteColor;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+}

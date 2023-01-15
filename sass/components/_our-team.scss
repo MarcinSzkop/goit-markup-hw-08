@@ -1,0 +1,49 @@
+.our-team {
+  font-style: normal;
+
+  &__bg {
+    background: $BG-OurTeamSection;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: $BlackColor;
+  }
+
+  &__figure {
+    background: $WhiteColor;
+    margin-left: 0px;
+    margin-right: 30px;
+    gap: 50px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    gap: 30;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $BlackColor;
+    padding-top: 30px;
+  }
+
+  &__postion {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: $DarkGrayColor;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}

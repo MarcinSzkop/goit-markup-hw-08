@@ -1,0 +1,40 @@
+.social-icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+
+  &__svg-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    transition-property: background-color, fill;
+    transition: $TransitionSet;
+
+    &--footer {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $BlueColor;
+    }
+  }
+
+  &__svg-bg:is(:hover, :focus) > &__svg {
+    fill: $WhiteColor;
+  }
+
+  &__svg {
+    fill: $DarkGrayColor;
+    vertical-align: middle;
+
+    &--footer {
+      fill: $WhiteColor;
+    }
+  }
+}

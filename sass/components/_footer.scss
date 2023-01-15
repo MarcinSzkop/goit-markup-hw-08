@@ -1,0 +1,134 @@
+.footer > .container {
+  display: flex;
+}
+
+.footer {
+  padding: 60px 0;
+
+  &__bg {
+    background: $FooterBG;
+  }
+
+  &__adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+
+  &__location {
+    font-weight: bold;
+    color: $WhiteColor;
+    transition: color $TransitionSet;
+
+    &:hover,
+    &:focus {
+      color: $BlueColor;
+    }
+  }
+
+  &__contact {
+    margin-top: 9px;
+    color: $Footer-contact;
+    transition: color $TransitionSet;
+    text-decoration: none;
+    display: flex;
+    padding: 0px;
+
+    &:hover,
+    &:focus {
+      color: $BlueColor;
+    }
+  }
+
+  &__joinus-box {
+    width: 206px;
+    height: 80px;
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+
+  &__joinus-heading {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: $WhiteColor;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__newsletter {
+    width: 570px;
+    height: 86px;
+    margin-left: 78px;
+    margin-top: 12px;
+  }
+
+  &__sub-box {
+    display: flex;
+  }
+
+  &__button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: $BlueColor;
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px 28px 0px 42px;
+    gap: 24px;
+    transition: background-color $TransitionSet;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+  }
+
+  &__sub-button-text {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $WhiteColor;
+  }
+
+  &__icon-send-sub {
+    fill: $WhiteColor;
+  }
+
+  &__form-sub {
+    width: 358px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 16px;
+    }
+  }
+
+  &__title-newsletter {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $WhiteColor;
+    margin-bottom: 20px;
+  }
+}
