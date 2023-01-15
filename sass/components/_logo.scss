@@ -21,4 +21,19 @@
 }
 
 @media screen and (min-width: 480px) {
+  .logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: $BlueColor;
+
+    &__studio {
+      color: $BlackColor;
+
+      &--white {
+        color: $WhiteColor;
+      }
+    }
+  }
 }
