@@ -76,16 +76,16 @@
       text-decoration: none;
       color: $BlueColor;
     }
-  }
 
-  svg {
-    fill: $BlackColor;
-    background-color: $WhiteColor;
-    cursor: pointer;
+    &__svg {
+      fill: $BlackColor;
+      background-color: $WhiteColor;
+      cursor: pointer;
 
-    &:hover,
-    &:focus {
-      fill: $BlueColor !important;
+      &:hover,
+      &:focus {
+        fill: $BlueColor !important;
+      }
     }
   }
 }
