@@ -30,11 +30,13 @@
     font-family: "Roboto";
     font-weight: 500;
     text-decoration: none;
+    letter-spacing: 0.02em;
 
     &__link {
       display: block;
       font-size: 40px;
       color: $BlackColor;
+
       padding-bottom: 32px;
       transition: $TransitionSet;
 
