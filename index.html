@@ -34,18 +34,17 @@
             >Web<span class="logo__studio">Studio</span>
           </a>
 
+        <!--Mobile Menu -->
           <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+          aria-controls="mobile-menu">
           <svg
             width="24"
             height="24"
             fill="currentColor"
             viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <path
               fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -53,6 +52,7 @@
             ></path>
           </svg>
         </button>
+        <!--End Mobile Menu-->
 
           <ul class="header__nav-list">
             <li>
@@ -618,11 +618,22 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="#" class="link">Agencja</a></li>
-        <li><a href="#" class="link">Portfolio</a></li>
-        <li><a href="#" class="link">Kontakt</a></li>
+        <li><a href="#" class="mobile-menu__link">Agencja</a></li>
+        <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
+      </ul>
+      <address>
+        <a class="mobile-menu__phone" href="">+48 111 111 111</a>
+        <a class="mobile-menu__email" href="mobile-menu__email">info@devstudio.com</a>
+      </address>
+      <ul class="mobile-menu__social-box">
+        <li><a class="mobile-menu__social-link" href="#">Instagram</a></li>
+        <li><a class="mobile-menu__social-link"  href="#">Twitter</a></li>
+      <li> <a class="mobile-menu__social-link" href="#">Facebook</a></li>
+      <li><a class="mobile-menu__social-link" href="#">LinkedIn</a></li>
       </ul>
     </div>
+    <!--End Moobile menu-->
 
     <script src="./js/modal.js"></script>
 
@@ -632,7 +643,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
   </body>
 </html>
