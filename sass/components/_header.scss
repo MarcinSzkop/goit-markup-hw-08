@@ -1,55 +1,62 @@
-.header {
-  padding: 24px 0px 25px;
-  border-bottom: 1px solid #ececec;
+.menu-toggle {
+  padding-left: 284px;
+  border: none;
+  background-color: transparent;
+  color: $BlackColor;
+}
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+@media screen and (min-width: 480px) {
+  .header {
+    padding: 24px 0px 25px;
+    border-bottom: 1px solid #ececec;
 
-  &__nav {
-    display: flex;
-    align-items: center;
-    gap: 93px;
-  }
-
-  &__nav-list {
-    display: flex;
-    gap: 46px;
-  }
-
-  &__nav-item {
-    position: relative;
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    color: $BlackColor;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color $TransitionSet;
-
-    &:hover,
-    &:focus {
-      color: $BlueColor;
+    &__nav-list {
+      display: none;
     }
 
-    &:is(:hover, :focus)::after {
-      content: "";
-      position: absolute;
-      top: 45px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $BlueColor;
-      pointer-events: none;
+    &__nav-link {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .menu-toggle {
+      display: none;
     }
 
-    &--active {
-      color: $BlueColor;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      &::after {
+    &__nav {
+      display: flex;
+      align-items: center;
+      gap: 93px;
+    }
+
+    &__nav-list {
+      display: flex;
+      gap: 46px;
+    }
+
+    &__nav-item {
+      position: relative;
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      color: $BlackColor;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color $TransitionSet;
+
+      &:hover,
+      &:focus {
+        color: $BlueColor;
+      }
+
+      &:is(:hover, :focus)::after {
         content: "";
         position: absolute;
         top: 45px;
@@ -60,33 +67,49 @@
         background-color: $BlueColor;
         pointer-events: none;
       }
+
+      &--active {
+        color: $BlueColor;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 45px;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          border-radius: 2px;
+          background-color: $BlueColor;
+          pointer-events: none;
+        }
+      }
     }
-  }
 
-  &__nav-contact {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-
-  &__nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    margin-left: 30px;
-    color: $DarkGrayColor;
-    fill: currentColor;
-    transition: color $TransitionSet;
-
-    &:is(:hover, :focus) {
-      color: $BlueColor;
+    &__nav-contact {
+      display: flex;
+      align-items: center;
+      list-style: none;
     }
-  }
 
-  &__svg {
-    vertical-align: middle;
-    margin-right: 10px;
-    transition: fill $TransitionSet;
+    &__nav-link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      margin-left: 30px;
+      color: $DarkGrayColor;
+      fill: currentColor;
+      transition: color $TransitionSet;
+
+      &:is(:hover, :focus) {
+        color: $BlueColor;
+      }
+    }
+
+    &__svg {
+      vertical-align: middle;
+      margin-right: 10px;
+      transition: fill $TransitionSet;
+    }
   }
 }
