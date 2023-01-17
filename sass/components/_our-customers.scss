@@ -3,24 +3,39 @@
 
   &__heading {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
+    @include desktop {
+      font-size: 36px;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
-    gap: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    @include desktop {
+      flex-flow: none;
+      justify-content: none;
+      gap: 30px;
+    }
   }
 
   &__bg {
-    width: 170px;
-    height: 92px;
+    margin: 0 auto;
+    margin-top: 30px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    margin-top: 50px;
     transition: border-color $TransitionSet;
     cursor: pointer;
+
+    @include desktop {
+      width: 170px;
+      height: 92px;
+      margin-top: 50px;
+    }
 
     &:is(:hover, :focus) {
       border-color: $BlueColor;
