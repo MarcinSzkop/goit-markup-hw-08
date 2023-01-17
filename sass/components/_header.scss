@@ -4,11 +4,14 @@
 
   &__menu-toggle {
     display: flex;
-    width: 40px;
-    height: 40px;
     border: none;
     background-color: transparent;
     color: $BlackColor;
+
+    &:hover,
+    &:focus {
+      color: $BlueColor !important;
+    }
   }
 
   &__wrapper {
