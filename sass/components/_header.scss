@@ -1,14 +1,16 @@
-.menu-toggle {
-  padding-left: 284px;
-  border: none;
-  background-color: transparent;
-  color: $BlackColor;
-}
+.header {
+  padding: 24px 0px 25px;
+  border-bottom: 1px solid #ececec;
 
-@media screen and (min-width: 480px) {
-  .header {
-    padding: 24px 0px 25px;
-    border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 480px) {
+    .menu-toggle {
+      padding-left: 284px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      color: $BlackColor;
+    }
 
     &__nav-list {
       display: none;
