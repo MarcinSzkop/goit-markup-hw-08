@@ -54,13 +54,4 @@
     padding-top: 10px;
     padding-bottom: 30px;
   }
-
-  &__img {
-    width: 450px;
-    height: 460px;
-    @include desktop {
-      width: 270px;
-      height: 260px;
-    }
-  }
 }
