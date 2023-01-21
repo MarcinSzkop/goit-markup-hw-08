@@ -1,11 +1,15 @@
 .portfolio-nav {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   size: 100%;
   gap: 8px;
 
   &__box {
-    margin-top: 94px;
+    margin-top: 60px;
+    @include desktop {
+      margin-top: 94px;
+    }
     justify-content: center;
   }
 
