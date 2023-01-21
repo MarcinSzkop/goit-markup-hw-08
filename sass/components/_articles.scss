@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @include tablet {
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    flex-direction: none;
+  }
 
   &__title {
     display: flex;
