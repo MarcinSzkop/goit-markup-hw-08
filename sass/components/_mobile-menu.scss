@@ -77,14 +77,15 @@
   }
 
   &__social-link {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 10px;
-    padding-right: 10px;
+    list-style: none;
     font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+    line-height: 1.22;
     color: $BlueColor;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 
   &__svg {
