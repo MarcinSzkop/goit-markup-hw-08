@@ -1,16 +1,18 @@
 .header {
+  border-bottom: 1px solid #ececec;
   padding: 16px 0px 16px;
-
   @include desktop {
     padding: 24px 0px 25px;
   }
-  border-bottom: 1px solid #ececec;
 
   &__menu-toggle {
     display: flex;
     border: none;
     background-color: transparent;
     color: $BlackColor;
+    @include tablet {
+      display: none;
+    }
 
     &:hover,
     &:focus {
@@ -84,8 +86,20 @@
 
   &__nav-contact {
     display: none;
-    align-items: center;
-    list-style: none;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding-left: 70px;
+    }
+
+    @include desktop {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
   }
 
   &__nav-link {

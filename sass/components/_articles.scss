@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @include tablet {
-    flex-direction: none;
-  }
 
   &__title {
     display: flex;
