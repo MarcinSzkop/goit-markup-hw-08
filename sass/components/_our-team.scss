@@ -5,6 +5,18 @@
     background: $BG-OurTeamSection;
   }
 
+  &__li {
+    max-width: 450px;
+
+    @include tablet {
+      max-width: 354px;
+    }
+
+    @include desktop {
+      max-width: 270px;
+    }
+  }
+
   &__heading {
     font-weight: 700;
     font-size: 28px;
@@ -29,13 +41,14 @@
   &__list {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     column-gap: 30px;
     font-size: 16px;
     @include tablet {
+      flex-wrap: wrap;
     }
     @include desktop {
-      flex-flow: inherit;
+      flex-wrap: wrap;
     }
   }
 

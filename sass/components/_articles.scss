@@ -1,23 +1,23 @@
 .articles {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
   @include tablet {
-    flex-direction: none;
     flex-wrap: wrap;
-    flex-basis: auto;
   }
   @include desktop {
-    flex-wrap: nowrap;
-    flex-direction: inherit;
+    flex-wrap: wrap;
   }
 
   &__li {
+    max-width: 450px;
+
     @include tablet {
-      max-width: 700px;
+      max-width: 354px;
     }
+
     @include desktop {
-      max-width: 1170px;
+      max-width: 270px;
     }
   }
 
