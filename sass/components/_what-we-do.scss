@@ -2,6 +2,7 @@
   display: none;
 
   @include desktop {
+    display: flex;
     margin-top: -94px;
   }
 
