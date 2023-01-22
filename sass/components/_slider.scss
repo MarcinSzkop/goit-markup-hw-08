@@ -27,11 +27,6 @@
     text-align: center;
     letter-spacing: 0.06em;
     margin-bottom: 40px;
-    @include desktop {
-      margin: 106px 252px 30px;
-      line-height: 60px;
-      font-size: 44px;
-    }
   }
 
   &__button {
