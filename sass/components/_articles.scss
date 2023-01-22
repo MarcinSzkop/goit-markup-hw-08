@@ -3,10 +3,10 @@
   flex-direction: column;
   gap: 30px;
   @include tablet {
-    flex-wrap: wrap;
+    flex-direction: wrap;
   }
   @include desktop {
-    flex-direction: none;
+    flex-direction: inherit;
   }
 
   &__title {
