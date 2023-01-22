@@ -13,27 +13,30 @@
   &__list {
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__li {
+    max-width: 210px;
+
+    @include tablet {
+      max-width: 226px;
+    }
 
     @include desktop {
-      flex-flow: none;
-      justify-content: none;
-      gap: 30px;
+      max-width: 160px;
     }
   }
 
   &__bg {
     margin: 0 auto;
-    margin-top: 30px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border-color $TransitionSet;
     cursor: pointer;
+    margin-top: 30px;
 
     @include desktop {
-      width: 170px;
-      height: 92px;
       margin-top: 50px;
     }
 
