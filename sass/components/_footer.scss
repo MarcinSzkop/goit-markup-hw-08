@@ -1,14 +1,30 @@
-.footer > .container {
-  display: flex;
-  align-content: center;
-
-  @include desktop {
-    flex-wrap: wrap;
-  }
-}
-
 .footer {
   padding: 60px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @include desktop {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &__group {
+    width: 100%;
+    white-space: nowrap;
+  }
 
   &__bg {
     background: $FooterBG;
@@ -52,10 +68,9 @@
   &__joinus-box {
     width: 100%;
     height: 80px;
-    margin-top: 60px;
-
     @include desktop {
-      max-width: 206px;
+      margin-top: 12px;
+      margin-left: 10px;
     }
   }
 
@@ -65,87 +80,104 @@
     font-weight: 700;
     font-size: 14px;
     color: $WhiteColor;
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__social-icons {
     display: flex;
     justify-content: center;
     gap: 10px;
+    @include desktop {
+      justify-content: flex-start;
+    }
   }
 
   &__newsletter {
     width: 100%;
     margin-top: 12px;
     @include desktop {
-      height: 86px;
-      margin-left: 78px;
+      margin-left: 18px;
     }
   }
 
   &__sub-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @include desktop {
+      flex-direction: row;
+    }
   }
-}
 
-&__button-subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-  background-color: $BlueColor;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 0px 28px 0px 42px;
-  gap: 24px;
-  transition: background-color $TransitionSet;
+  &__button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: $BlueColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px 28px 0px 42px;
+    gap: 24px;
+    transition: background-color $TransitionSet;
 
-  &:hover,
-  &:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
   }
-}
 
-&__sub-button-text {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: $WhiteColor;
-}
-
-&__icon-send-sub {
-  fill: $WhiteColor;
-}
-
-&__form-sub {
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 16px;
-  margin-bottom: 20px;
-
-  &::placeholder {
+  &__sub-button-text {
+    text-align: center;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $WhiteColor;
   }
-}
 
-&__title-newsletter {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: $WhiteColor;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  &__icon-send-sub {
+    fill: $WhiteColor;
+  }
+
+  &__form-sub {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+
+    /*margin-bottom: 20px;*/
+
+    &::placeholder {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 16px;
+    }
+
+    @include tablet {
+      max-width: 450px;
+    }
+  }
+
+  &__title-newsletter {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $WhiteColor;
+    margin-bottom: 20px;
+    @include desktop {
+      text-align: left;
+    }
+  }
 }
