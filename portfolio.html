@@ -323,83 +323,112 @@
         <!--End portfolio section-->
     </main>
 
-  <!--Page footer-->
-  <footer class="footer footer__bg">
-    <div class="container">
-      <div>
-        <a href="index.html" class="logo"
-          >Web<span class="logo__studio logo__studio--white">Studio</span></a
-        >
-        <address class="footer__adress">
-          <a
-            class="footer__location"
-            href="https://goo.gl/maps/cexEDxkeDW6zovho7"
-            target="_blank"
-            >Warszawa, Aleje Jerozolimskie 21</a
-          >
-          <a class="footer__contact" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <a class="footer__contact" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
-        </address>
+    <!--Page footer-->
+    <footer class="footer footer__bg">
+      <div class="container footer__wrapper">
+        <div class="footer__info">
+          <div class="footer__group">
+            <a href="index.html" class="logo"
+              >Web<span class="logo__studio logo__studio--white">Studio</span>
+            </a>
+            <address class="footer__adress">
+              <a
+                class="footer__location"
+                href="https://goo.gl/maps/cexEDxkeDW6zovho7"
+                target="_blank"
+                >Warszawa, Aleje Jerozolimskie 21
+              </a>
+              <a class="footer__contact" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+              <a class="footer__contact" href="tel:+48111111111"
+                >+48 111 111 111
+              </a>
+            </address>
+          </div>
+          <div class="footer__joinus-box">
+            <h3 class="footer__joinus-heading">Dołącz do nas</h3>
+            <ul class="footer__social-icons">
+              <li>
+                <a
+                  class="social-icon__svg-bg social-icon__svg-bg--footer"
+                  href="#"
+                >
+                  <svg
+                    class="social-icon__svg social-icon__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-icon__svg-bg social-icon__svg-bg--footer"
+                  href="#"
+                >
+                  <svg
+                    class="social-icon__svg social-icon__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-icon__svg-bg social-icon__svg-bg--footer"
+                  href="#"
+                >
+                  <svg
+                    class="social-icon__svg social-icon__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-icon__svg-bg social-icon__svg-bg--footer"
+                  href="#"
+                >
+                  <svg
+                    class="social-icon__svg social-icon__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin2"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__newsletter">
+          <h3 class="footer__title-newsletter">Zapisz się do newslettera</h3>
+          <form class="footer__sub-box">
+            <input
+              class="footer__form-sub"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button class="footer__button-subscribe" type="submit">
+              <span class="footer__sub-button-text">Zapisz się</span>
+              <svg class="footer__icon-send-sub" width="24" height="24">
+                <use href="./images/icons.svg#icon-send-sub"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="footer__joinus-box">
-        <h3 class="footer__joinus-heading">Dołącz do nas</h3>
-          <ul class="footer__social-icons">
-            <li>
-              <a class="social-icon__svg-bg social-icon__svg-bg--footer" href="#">
-                <svg class="social-icon__svg social-icon__svg--footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon__svg-bg social-icon__svg-bg--footer" href="#">
-                <svg class="social-icon__svg social-icon__svg--footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon__svg-bg social-icon__svg-bg--footer" href="#">
-                <svg class="social-icon__svg social-icon__svg--footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon__svg-bg social-icon__svg-bg--footer" href="#">
-                <svg class="social-icon__svg social-icon__svg--footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin2"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </ul>
-      </div>
-      <div class="footer__newsletter">
-        <h3 class="footer__title-newsletter">Zapisz się do newslettera</h3>
-        <form class="footer__sub-box">
-          <input
-            class="footer__form-sub"
-            type="email"
-            name="subscribe"
-            placeholder="E-mail"
-            required
-          />
-          <button class="footer__button-subscribe" type="submit">
-            <span class="footer__sub-button-text">Zapisz się</span>
-            <svg class="footer__icon-send-sub" width="24" height="24">
-              <use href="./images/icons.svg#icon-send-sub"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
-  </footer>
-  <!--End Page footer-->
+    </footer>
+    <!--End Page footer-->
 
       <!--Mobile menu -->
       <div class="menu-container js-menu-container" id="mobile-menu">
