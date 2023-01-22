@@ -1,9 +1,12 @@
 .portfolio {
   display: flex;
-  justify-items: center;
 
   &__grid {
-    flex-wrap: wrap;
+    justify-items: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
 
     @include desktop {
       gap: 30px;
