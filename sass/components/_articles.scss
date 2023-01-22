@@ -3,7 +3,8 @@
   flex-direction: column;
   gap: 30px;
   @include tablet {
-    flex-direction: wrap;
+    flex-direction: column;
+    columns: 150px 2;
   }
   @include desktop {
     flex-direction: inherit;
