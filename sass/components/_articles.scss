@@ -2,8 +2,23 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @include tablet {
+    flex-direction: none;
+    flex-wrap: wrap;
+    flex-basis: auto;
+  }
   @include desktop {
+    flex-wrap: nowrap;
     flex-direction: inherit;
+  }
+
+  &__li {
+    @include tablet {
+      max-width: 700px;
+    }
+    @include desktop {
+      max-width: 1170px;
+    }
   }
 
   &__title {
@@ -29,12 +44,7 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    @include tablet {
-      max-width: 700px;
-      flex-wrap: wrap;
-    }
     @include desktop {
-      max-width: 1170px;
       width: 270px;
       height: 120px;
     }
